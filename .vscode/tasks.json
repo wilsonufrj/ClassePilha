@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build TorreHanoi",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-Wall",
+                "-g",
+                "teste.cpp",
+                "Pilha.hpp",
+                "TorreHanoi.cpp",
+                "-o",
+                "${workspaceFolder}/torreHanoi"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilando todos os arquivos para TorreHanoi"
+        }
+    ]
+}
